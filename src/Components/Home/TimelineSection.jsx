@@ -54,11 +54,14 @@ const TimelineSection = () => {
             {timelineData.map((item, index) => (
               <div key={index} className="relative">
                 {/* <div className="absolute -left-3 top-1 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-md"></div> */}
-                <h3 className="text-xl font-bold text-gray-700">{item.year}</h3>
-                <h4 className="text-lg font-semibold text-gray-600">
-                  {item.title}
+                <h3 className="text-3xl font-bold text-gray-700">
+                  {item.year}
+                </h3>
+                <h4 className="text-lg font-semibold text-gray-600 flex items-center gap-2">
+                  {item.title}{" "}
+                  <hr className="inline-block w-20 text-[#be7d60]" />
                 </h4>
-                <p className="text-gray-500 mt-2">{item.description}</p>
+                <p className="solid-color mt-2">{item.description}</p>
               </div>
             ))}
           </div>

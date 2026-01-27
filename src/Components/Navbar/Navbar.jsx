@@ -11,8 +11,8 @@ const Navbar = () => {
          to={"/"}
          className={({ isActive }) =>
            isActive
-             ? "text-[#F57C00] bg-transparent"
-             : "hover:text-[#F57C00] bg-transparent flex items-center"
+             ? "text-[#cf774e] bg-transparent"
+             : "hover:text-[#be7d60] bg-transparent flex items-center"
          }
        >
          Home
@@ -23,8 +23,8 @@ const Navbar = () => {
          to={"/about-us"}
          className={({ isActive }) =>
            isActive
-             ? "text-[#F57C00] bg-transparent"
-             : "hover:text-[#F57C00] bg-transparent"
+             ? "text-[#be7d60] bg-transparent"
+             : "hover:text-[#be7d60] bg-transparent"
          }
        >
          About Us
@@ -35,8 +35,8 @@ const Navbar = () => {
          to={"/practice-areas"}
          className={({ isActive }) =>
            isActive
-             ? "text-[#F57C00] bg-transparent"
-             : "hover:text-[#F57C00] bg-transparent"
+             ? "text-[#be7d60] bg-transparent"
+             : "hover:text-[#be7d60] bg-transparent"
          }
        >
          Practice Areas
@@ -47,8 +47,8 @@ const Navbar = () => {
          to={"/our-team"}
          className={({ isActive }) =>
            isActive
-             ? "text-[#F57C00] bg-transparent"
-             : "hover:text-[#F57C00] bg-transparent"
+             ? "text-[#be7d60] bg-transparent"
+             : "hover:text-[#be7d60] bg-transparent"
          }
        >
          Our Team
@@ -59,8 +59,8 @@ const Navbar = () => {
          to={"/case-studies"}
          className={({ isActive }) =>
            isActive
-             ? "text-[#F57C00] bg-transparent"
-             : "hover:text-[#F57C00] bg-transparent"
+             ? "text-[#be7d60] bg-transparent"
+             : "hover:text-[#be7d60] bg-transparent"
          }
        >
          Case Studies
@@ -71,8 +71,8 @@ const Navbar = () => {
          to={"/blog"}
          className={({ isActive }) =>
            isActive
-             ? "text-[#F57C00] bg-transparent"
-             : "hover:text-[#F57C00] bg-transparent"
+             ? "text-[#be7d60] bg-transparent"
+             : "hover:text-[#be7d60] bg-transparent"
          }
        >
          Blog
@@ -83,8 +83,8 @@ const Navbar = () => {
          to={"/contact"}
          className={({ isActive }) =>
            isActive
-             ? "text-[#F57C00] bg-transparent"
-             : "hover:text-[#F57C00] bg-transparent"
+             ? "text-[#be7d60] bg-transparent"
+             : "hover:text-[#be7d60] bg-transparent"
          }
        >
          Contact
@@ -122,12 +122,12 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex="-1"
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm text-base font-medium solid-color dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 {links}
               </ul>
             </div>
-            <Link className="text-xl flex gap-2 items-center bg-transparent border-0 hover:outline-0">
+            <Link to={"/"} className="text-xl flex gap-2 items-center bg-transparent border-0 hover:outline-0">
               <img className="w-10 h-10" src={logo} alt="website logo" />
               <h1 className="text-2xl font-normal solid-color">JUSTIVO</h1>
             </Link>
@@ -136,7 +136,9 @@ const Navbar = () => {
            
           </div> */}
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{links}</ul>
+            <ul className="menu menu-horizontal px-1 solid-color text-base font-medium">
+              {links}
+            </ul>
             <button className="btn btn-neutral">Free Consultation</button>
           </div>
         </div>
