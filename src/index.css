@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+
 @import "tailwindcss";
 @plugin "daisyui" {
   themes: light --default, cupcake;
 }
 
+*{
+  font-family: "Forum", serif;
+}
+
 .solid-color{
   @apply text-[#000000]
 }
+

@@ -94,7 +94,7 @@ const Navbar = () => {
  );
 
     return (
-      <div className="max-w-7xl mx-auto px-5 pt-3">
+      <div className="max-w-7xl mx-auto px-5 md:px-10 pt-3">
         <TopNavbar></TopNavbar>
         <div className="navbar bg-base-100 p-0">
           <div className="navbar-start">
@@ -132,10 +132,11 @@ const Navbar = () => {
               <h1 className="text-2xl font-normal solid-color">JUSTIVO</h1>
             </Link>
           </div>
+          {/* <div className="navbar-center hidden lg:flex">
+           
+          </div> */}
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{links}</ul>
-          </div>
-          <div className="navbar-end">
             <button className="btn btn-neutral">Free Consultation</button>
           </div>
         </div>

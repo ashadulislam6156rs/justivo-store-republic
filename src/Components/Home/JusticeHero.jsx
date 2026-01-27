@@ -2,10 +2,10 @@ import React from "react";
 
 export default function JusticeHero() {
   return (
-    <div className="max-w-7xl mx-auto flex items-center gap-10 md:gap-55 px-5  md:pt-15 pb-5 overflow-hidden">
+    <div className="max-w-7xl mx-auto flex items-center gap-10 md:gap-50 px-5 md:px-10  md:pt-12 pb-10 overflow-hidden">
       {/* Left Section - Text */}
       <div className="space-y-4">
-        <h1 className="md:text-7xl text-3xl font-light leading-tight">
+        <h1 className="md:text-8xl text-3xl font-light">
           <span className="text-black">Justice. Advocacy.</span>
           <br />
           <span className="text-amber-700">Results.</span>

@@ -3,7 +3,7 @@ import bg from "../../assets/footer-elements.png"
 
 const Footer = () => {
   return (
-    <footer className="relative max-w-7xl mx-auto text-gray-300 px-5 pt-20 pb-8 overflow-hidden">
+    <footer className="relative max-w-7xl mx-auto text-gray-300 px-5 md:px-10 pt-20 pb-8 overflow-hidden">
       {/* watermark background */}
       <div
         className="absolute z-10 inset-0 bg-no-repeat bg-center md:mr-30 bg-contain"
